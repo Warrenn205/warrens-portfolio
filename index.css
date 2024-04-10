@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("images/Programming Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: white; 
+}
+
+.header {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.nav_links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav_link {
+  margin-left: 20px;
+}
+
+.nav_link a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav_link a:hover {
+  color: #003cff; 
+}
+
+
+.wrapper {
+  display: flex; 
+  align-items: center;
+  height: 100vh; 
+  margin-top: 80px; 
+  margin-left: 160px; 
+}
+
+img {
+  margin-right: 40px;
+  border-radius: 20px;
+}
+
+.text {
+  color: white;
+  font-size: xx-large;
+}
+
+h2 {
+  color: white;
+}
+
+.primary-heading {
+  font-size: 97px; 
+}
+
+.header_text {
+  font-size: 97px; 
+}
+
+.about {
+  margin-left: 160px; 
+}
+
+.content {
+  display: flex; 
+  align-items: center; 
+}
+
+.text {
+  margin-left: 20px; 
+}
+
+p {
+  font-size: smaller;
+}
+
+h1 {
+  color: white; 
+}
+
+.education {
+  margin-left: 160px;
+}
+
+.content2 {
+  display: flex; 
+  align-items: center; 
+}
+
+.experience {
+  margin-left: 160px; 
+}
+
+.content3 {
+  display: flex; 
+  align-items: center; 
+}
+
+.projects {
+  margin-left: 160px;
+}
+
+.content4 {
+  display: flex; 
+  align-items: center; 
+}
+
