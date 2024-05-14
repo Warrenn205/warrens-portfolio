@@ -6,21 +6,12 @@
 
 
 body {
-  background-image: url("images/Programming Wallpaper.jpg");
+  background-color: rgb(24, 23, 23);
   background-size: cover;
   background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   color: white; 
 }
-
-.wrapper {
-  animation: fadeIn 5s; 
- }
-
- @keyframes fadeIn {
-   0% { opacity: 0; }
-   100% { opacity: 1; }
- }
 
 .header {
   position: fixed; 
@@ -29,6 +20,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5); 
   color: #fff;
   padding: 20px;
+  z-index: 100; /* Ensure the header is above other elements */
 }
 
 .nav {
@@ -37,7 +29,7 @@ body {
   align-items: center;
 }
 
-.nav_links {
+.nav_links {  
   list-style-type: none;
   display: flex;
 }
@@ -53,150 +45,84 @@ body {
 }
 
 .nav_link a:hover {
-  color: #003cff; 
+  color: #1440e0; 
 }
 
-
-.wrapper {
-  display: flex; 
-  align-items: center;
-  height: 100vh; 
+.side-pane {
+  position: fixed;
   margin-top: 80px; 
-  margin-left: 160px; 
+  margin-left: 50px;
+  width: 250px; /* Adjust the width of the sidebar */
+  float: left; /* Float the sidebar to the left */
+  margin-right: 20px; /* Add some margin between the sidebar and the content */
 }
 
-img {
-  margin-right: 40px;
-  border-radius: 20px;
+.zoom-container {
+  width: 165px; /* Adjust the width of the container */
+  height: 165px; /* Adjust the height of the container */
+  border-radius: 50%; /* Make the container circular */
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.text {
+.zoom-container img {
+  width: 105%; /* Ensure the image fills the container */
+  height: 116%; /* Ensure the image fills the container */
+  object-position: 90%;
+}
+
+.profile_links {
+  text-decoration: none;
   color: white;
-  font-size: xx-large;
+  transition: color 0.3s ease;
 }
 
-h2 {
-  color: white;
+.profile_links a:hover {
+  color: #1440e0; 
 }
 
-.primary-heading {
-  font-size: 97px; 
+.github-icon {
+  color: #ffffff; /* Adjust the color of the icon */
+  font-size: 14px; /* Adjust the size of the icon */
+  margin-top: 10px; /* Adjust the margin-top for positioning */
 }
 
-.header_text {
-  font-size: 97px; 
+ul {
+  list-style-type: none; /* Remove bullet points from all unordered lists */
 }
 
-.about {
-  margin-left: 160px; 
+/* CSS for the main content area */
+.content-section {
+  margin-top: 80px; 
+  margin-left: 320px;
+  display: flex; /* Use flexbox layout */
 }
 
 .content {
-  display: flex; 
-  align-items: center; 
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
 }
 
 .text {
-  margin-left: 20px; 
+  margin-left: 20px; /* Add some spacing between the image and text */
 }
 
-p {
-  font-size: smaller;
+.content img {
+  border-radius: 10%;
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
 }
 
-h1 {
-  color: white; 
+.line-container {
+  width: 1000%; /* Adjust the width of the container */
 }
 
-.education {
-  margin-left: 160px;
+.line {
+  border-bottom: 2px solid rgb(255, 255, 255); /* Add a solid black line under the text */
 }
 
-.content2 {
-  display: flex; 
-  align-items: center; 
-}
-
-.experience {
-  margin-left: 160px; 
-}
-
-.content3 {
-  display: flex; 
-  align-items: center; 
-}
-
-.projects {
-  margin-left: 160px;
-}
-
-.content4 {
-  display: flex; 
-  align-items: center; 
-}
-
-#contact {
-  padding: 20px;
-  border-radius: 10px;
-}
-
-form {
-  max-width: 400px; 
-  margin: auto; 
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%; 
-  padding: 10px;
-  background-color: #010404e4;
-  color: white;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-textarea {
-  resize: vertical; 
-}
-
-input[type="submit"] {
-  background-color: #007bff; 
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #0056b3; 
-}
-
-.experience-entry {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-}
-
-.text {
-  margin-left: 20px; /* Adjust margin as needed */
-}
-
-.cent {
-  color: white;
-}
-
-.gate {
-  color: white;
+.logo-image {
+  width: 100px; /* Adjust the width of the image */
+  height: auto; /* Maintain the aspect ratio */
 }
